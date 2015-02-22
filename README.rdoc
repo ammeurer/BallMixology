@@ -1,0 +1,24 @@
+Available Strategies to type in to input txt box in GUI:
+update_strategies:
+update_strategies.StraightStrategy
+update_strategies.BalloonStrategy
+update_strategies.LostStrategy
+update_strategies.DiscoStrategy
+update_strategies.DodgeStrategy
+
+interaction_strategies:
+interaction_strategies.CollideStrategy
+interaction_strategies.ColorConformStrategy
+interaction_strategies.SlideStrategy
+interaction_strategies.StickySyncStrategey
+
+Available Paint Strategies:
+
+paint_strategies.BallPaintStrategy
+paint_strategies.BirdPaintStrategy
+paint_strategies.ButterflyPaintStrategy
+paint_strategies.EllipsePaintStrategy
+paint_strategies.FishPaintStrategy
+paint_strategies.RectanglePaintStrategy
+paint_strategies.SaturnPaintStrategy
+paint_strategies.TrianglePaintStrategy
