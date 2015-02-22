@@ -1,0 +1,112 @@
+package view;
+
+import java.awt.Graphics;
+
+import strategies.IStrategyFac;
+/**
+ * Adapter from the view back to the model
+ */
+public interface IModelAdapter<TStrategyDropListItem, TPaintDropListItem> {
+
+	
+	/**
+	 * Method to paint the sprites back in the model.
+	 * @param g   The current Graphics context
+	 */
+	public void paint(Graphics g);
+	
+	
+	public void clearBalls();
+	
+	//public void makeBall(String className);
+	
+	public TStrategyDropListItem addStrategy(String classname);
+	
+	public void makeBall(TStrategyDropListItem item, TPaintDropListItem myPaint);
+	
+	public TStrategyDropListItem combineStrategies(TStrategyDropListItem selectedItem1, TStrategyDropListItem selectedItem2);
+
+	public void setSwitch(TStrategyDropListItem switcher);
+	
+	public void makeSwitcher();
+	
+	public TPaintDropListItem getPaintStrategy();
+	
+	public TPaintDropListItem addPaintStrategy(String text);
+
+	/**
+	 * No-op singleton implementation of IModelAdapter (Null Object Design Pattern).
+	 */
+	public static final IModelAdapter<?, ?> NULL_OBJECT = new IModelAdapter() {
+
+		public void paint(Graphics g) {
+			
+		}
+		
+		public void clearBalls(){
+			
+		}
+		
+	
+
+
+
+
+		@Override
+		public IStrategyFac addStrategy(String classname) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+
+		@Override
+		public IStrategyFac combineStrategies(Object selectedItem1,
+				Object selectedItem2) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public void makeBall(Object item, Object thisPaint) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void setSwitch(Object switcher) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void makeSwitcher() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public Object getPaintStrategy() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public Object addPaintStrategy(String text) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+
+
+	};
+
+
+	
+
+
+
+
+
+	
+
+}

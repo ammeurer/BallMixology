@@ -1,0 +1,6 @@
+package balls;
+
+public interface IBallCmd {
+	public abstract void apply(Ball context, Dispatcher disp);
+
+}

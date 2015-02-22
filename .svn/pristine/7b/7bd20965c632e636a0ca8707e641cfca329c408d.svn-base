@@ -1,0 +1,32 @@
+package paint.shape;
+
+import java.awt.Point;
+import java.awt.Shape;
+import java.awt.geom.AffineTransform;
+
+import paint.EllipsePaintStrategy;
+
+public class FishFactory implements IShapeFactory{
+
+//	
+//	public static FishFactory Singleton = new FishFactory();
+//	
+//	private PolygonFactory triangle;
+//	
+//	private Point [] points = {new Point(0,0), new Point(1,0), new Point(((int)Math.sqrt(5.0))/2, 1)};
+//	
+//	private Shape fishHead;
+//	
+//	public FishFactory(){
+//		fishHead = EllipseShapeFactory.Singleton.makeShape(x, y, xScale, yScale);
+//		triangle = new PolygonFactory(new AffineTransform(), 0, points);
+//		fishHead = new EllipsePaintStrateg(AffineTransform at, double x, double y, double width, double height);
+//	}
+	@Override
+	public Shape makeShape(double x, double y, double xScale, double yScale) {
+		return null;
+	}
+}
+	
+
+

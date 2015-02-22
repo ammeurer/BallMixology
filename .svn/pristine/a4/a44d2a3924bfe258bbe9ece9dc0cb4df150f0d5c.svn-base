@@ -1,0 +1,15 @@
+package strategies;
+
+import balls.Ball;
+import balls.Dispatcher;
+
+/**
+ * Interface for strategies
+ * @author ammeurer
+ *
+ */
+public interface IUpdateStrategy {
+	
+	public void updateState(Ball thisBall, Dispatcher d);
+
+}

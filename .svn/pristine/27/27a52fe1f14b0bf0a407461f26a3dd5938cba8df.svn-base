@@ -1,0 +1,37 @@
+package strategies;
+
+import java.awt.Point;
+import java.awt.Rectangle;
+
+import balls.Ball;
+import balls.Dispatcher;
+import util.Randomizer;
+/**
+ * LostStrategy changes its velocity every 10 clock cycles 
+ * for erratic movement
+ * @author ammeurer
+ *
+ */
+public class LostStrategy implements IUpdateStrategy {
+	
+	Randomizer rand = new Randomizer();
+	
+	Rectangle rect = new Rectangle(30, 30);
+	
+	
+	int wait = 0;
+
+	@Override
+	public void updateState(Ball thisBall, Dispatcher d) {
+		if(wait == 10){
+			Point v = rand.randomVel(rect);
+			thisBall.setVelocity(v);
+			wait = 0;
+		}
+		else{
+			wait++;
+		}
+
+	}
+
+}

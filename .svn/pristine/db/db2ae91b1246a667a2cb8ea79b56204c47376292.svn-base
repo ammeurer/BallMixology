@@ -1,0 +1,246 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import java.awt.Color;
+
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+import com.jgoodies.forms.layout.FormLayout;
+import com.jgoodies.forms.layout.ColumnSpec;
+import com.jgoodies.forms.factories.FormFactory;
+import com.jgoodies.forms.layout.RowSpec;
+import javax.swing.JComboBox;
+
+/*
+ * BallWorldFrame defines the view, or GUI
+ */
+public class BallWorldFrame<TStrategyDropListItem, TPaintDropListItem> extends JFrame {
+	
+
+	private static final long serialVersionUID = -4154192564225992943L;
+	private JPanel contentPane;
+	private JTextField txtBallType;
+	private JPanel panelBalls;
+	// The model adapter is initialized to a no-op to insure that system always has well-defined behavior
+	private IModelAdapter<TStrategyDropListItem, TPaintDropListItem> adapter = (IModelAdapter<TStrategyDropListItem, TPaintDropListItem>) IModelAdapter.NULL_OBJECT;
+	private JComboBox<TStrategyDropListItem> dropListTop;
+	private JComboBox<TStrategyDropListItem> dropListBottom;
+	private JButton btnSwitcherBall;
+	private JButton btnSwitch;
+	private TStrategyDropListItem switcher;
+	private JTextField txtPaintStrategy;
+	private JButton btnAddToPaintList;
+	private JComboBox<TPaintDropListItem> comboBoxPaint;
+	/*
+	 * Constructor used in controller.
+	 */
+	public BallWorldFrame(IModelAdapter<TStrategyDropListItem, TPaintDropListItem> modelAdapter){
+		this.adapter = modelAdapter;
+		initGUI();
+	}
+	/**
+	 * Launch the application.
+	 */		
+	public void start(){
+		setVisible(true);
+	}
+
+	/*
+	 * Getter for panel where balls bounce.
+	 */
+	public Component getPanel(){
+		return panelBalls;
+	}
+	
+	/*
+	 * Update GUI every timer cycle.
+	 */
+	public void update(){
+		panelBalls.repaint();
+	}
+	public TStrategyDropListItem getSwitcher(){
+		return switcher;
+	}
+	/**
+	 * Create the frame.
+	 */
+	public void initGUI(){
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		
+		
+		JPanel panelButton = new JPanel();
+		panelButton.setBackground(Color.PINK);
+		contentPane.add(panelButton, BorderLayout.NORTH);
+		/*
+		 * When this button is pressed, all balls are cleared from the GUI
+		 */
+		panelButton.setLayout(new FormLayout(new ColumnSpec[] {
+				ColumnSpec.decode("109px"),
+				ColumnSpec.decode("122px:grow"),
+				FormFactory.LABEL_COMPONENT_GAP_COLSPEC,
+				ColumnSpec.decode("95px"),
+				FormFactory.RELATED_GAP_COLSPEC,
+				ColumnSpec.decode("default:grow"),
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,
+				FormFactory.RELATED_GAP_COLSPEC,
+				FormFactory.DEFAULT_COLSPEC,},
+			new RowSpec[] {
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				FormFactory.DEFAULT_ROWSPEC,
+				FormFactory.RELATED_GAP_ROWSPEC,
+				RowSpec.decode("29px"),}));
+		
+		panelBalls = new JPanel(){
+
+			private static final long serialVersionUID = 2019851699131459986L;
+			
+
+			/**
+			 * Overridden paintComponent method to paint a shape in the panel.
+			 * @param g The Graphics object to paint on.
+			 **/
+			public void paintComponent(Graphics g) {				
+				super.paintComponent(g);   // Do everything normally done first, e.g. clear the screen.
+				adapter.paint(g);
+			}
+		};
+		/*
+		 * Add a ball when the 'Make Ball' button is pressed.
+		 */
+		JButton btnNewBall = new JButton("Make Ball");
+		btnNewBall.setToolTipText("Make a ball with the strategy specified in the top drop list");
+		btnNewBall.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println(comboBoxPaint.getItemAt(comboBoxPaint.getSelectedIndex()));
+	           adapter.makeBall((TStrategyDropListItem)(dropListTop.getItemAt(dropListTop.getSelectedIndex())), (TPaintDropListItem)(comboBoxPaint.getItemAt(comboBoxPaint.getSelectedIndex())));
+			}
+		});	
+		panelButton.add(btnNewBall, "2, 2, left, top");
+		
+		txtPaintStrategy = new JTextField();
+		txtPaintStrategy.setText("paint.EllipsePaintStrategy");
+		panelButton.add(txtPaintStrategy, "6, 2, fill, default");
+		txtPaintStrategy.setColumns(10);
+		
+		txtBallType = new JTextField();
+		panelButton.add(txtBallType, "1, 4");
+		txtBallType.setText("strategies.StraightStrategy");
+		txtBallType.setColumns(10);
+		
+		dropListTop = new JComboBox<TStrategyDropListItem>();
+		panelButton.add(dropListTop, "2, 4, fill, default");
+		
+		JButton btnCombine = new JButton("Combine");
+		btnCombine.setToolTipText("Make a new strategy by combining the two strategies specified in the above drop lists");
+		btnCombine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				TStrategyDropListItem top = (TStrategyDropListItem)dropListTop.getItemAt(dropListTop.getSelectedIndex());
+				TStrategyDropListItem bottom = (TStrategyDropListItem)dropListBottom.getItemAt(dropListBottom.getSelectedIndex());
+				if(top != null && bottom != null){
+				System.out.println(top.toString());
+				System.out.println(bottom.toString());
+				TStrategyDropListItem multi = (TStrategyDropListItem) (adapter.combineStrategies(top, bottom));
+				dropListTop.insertItemAt(multi, 0);
+				}
+				else{
+					System.out.println("You have not properly selected a drop list item");
+				}
+			}
+		});
+		
+		JButton btnAddToLists = new JButton("Add to Lists");
+		btnAddToLists.setToolTipText("Add the above strategy to both drop lists of available strategies");
+		btnAddToLists.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				TStrategyDropListItem o = adapter.addStrategy(txtBallType.getText());
+				
+				if (null == o) return; // just in case
+				dropListTop.insertItemAt(o, 0);
+				dropListBottom.insertItemAt(o, 0);
+			}
+		});
+		
+		btnSwitcherBall = new JButton("Switcher");
+		btnSwitcherBall.setToolTipText("Create a switcher ball");
+		btnSwitcherBall.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				adapter.makeSwitcher();
+
+			}
+		});
+		panelButton.add(btnSwitcherBall, "4, 4");
+		
+		btnAddToPaintList = new JButton("Add to List");
+		btnAddToPaintList.setToolTipText("Add the above paint strategy to the drop list of available paint strategies");
+		btnAddToPaintList.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				TPaintDropListItem o = adapter.addPaintStrategy(txtPaintStrategy.getText());
+				
+				if (null == o) return; // just in case
+				comboBoxPaint.insertItemAt(o, 0);
+			}
+		});
+		panelButton.add(btnAddToPaintList, "6, 4");
+		panelButton.add(btnAddToLists, "1, 6");
+		
+		dropListBottom = new JComboBox<TStrategyDropListItem>();
+		panelButton.add(dropListBottom, "2, 6, fill, default");
+		
+		btnSwitch = new JButton("Switch");
+		btnSwitch.setToolTipText("Switch all Switcher Balls to the strategy specified in the top drop list");
+		btnSwitch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				switcher = ( dropListTop.getItemAt(dropListTop.getSelectedIndex()));
+				adapter.setSwitch(switcher);
+			}
+		});
+		panelButton.add(btnSwitch, "4, 6");
+		
+		comboBoxPaint = new JComboBox<TPaintDropListItem>();
+		panelButton.add(comboBoxPaint, "6, 6, fill, default");
+		panelButton.add(btnCombine, "2, 8");
+		
+		JButton btnClear = new JButton("Clear Frame\n");
+		btnClear.setToolTipText("Clear the window of all objects");
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				adapter.clearBalls();
+			}
+		});
+		panelButton.add(btnClear, "6, 8, left, top");
+
+		panelBalls.setBackground(Color.LIGHT_GRAY);
+		contentPane.add(panelBalls, BorderLayout.CENTER);
+		
+
+	}
+}

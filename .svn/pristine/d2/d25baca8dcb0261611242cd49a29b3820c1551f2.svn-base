@@ -1,0 +1,7 @@
+Available Strategies to type in to input txt box in GUI:
+
+strategies.StraightStrategy
+strategies.BalloonStrategy
+strategies.LostStrategy
+strategies.DiscoStrategy
+strategies.DodgeStrategy

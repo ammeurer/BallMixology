@@ -1,0 +1,23 @@
+package model.ball;
+
+import java.util.Observable;
+
+/**
+ * The Dispatcher class communicates with all the Ball objects
+ * and updates them each tick of the timer.
+ * @author ammeurer
+ *
+ */
+public class Dispatcher extends Observable {
+
+	  /**
+	  * Immediately notifies all the Observers held.
+	  * @param param An input parameter that is passed on to all the Observers.
+	  */
+	 public void notifyAll(IBallCmd param)
+	  {
+	    setChanged();
+	    notifyObservers(param);
+	  }
+	}
+

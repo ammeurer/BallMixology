@@ -1,0 +1,72 @@
+package paint;
+
+import java.awt.Graphics;
+import java.awt.geom.AffineTransform;
+
+import balls.Ball;
+/**
+ * APaintStrategy is the abstract class for all painting strategies.
+ * @author ammeurer
+ *
+ */
+public abstract class APaintStrategy implements IPaintStrategy {
+	/**
+	 * Affine Transform for all subclasses to inherit
+	 */
+	protected AffineTransform at;
+	
+	/**
+	 * Constructor
+	 * @param myAT: AffineTransform
+	 */
+	public APaintStrategy(AffineTransform myAT){
+		at = myAT;
+		
+	}
+
+	/**
+	 * Invariant paint method for all APaintStrategy paint strategies 
+	 */
+	@Override
+	public void paint(Graphics g, Ball host) {
+		double scale = host.getRadius();
+		at.setToTranslation(host.getLocation().x, host.getLocation().y);
+		at.scale(scale, scale);
+		at.rotate(Math.atan2(host.getVelocity().y, host.getVelocity().x));
+		g.setColor(host.getColor());  
+		init(host);
+		paintCfg(g, host);
+		paintXfrm(g, host, at);
+	}
+
+	/**
+	 * The init method is a no-op method in the abstract class
+	 * that can be optionally implemented in subclasses for 
+	 * additional initialization before painting
+	 */
+	@Override
+	public void init(Ball host) {
+
+	}
+	
+	/**
+	 * The paintCfg method is a no-op method in the abstract class
+	 * that can be optionally implemented in subclasses for variable
+	 * painting.
+	 * @param g is Graphics GUI object
+	 * @param host is the ball object that is being painted
+	 */
+	protected void paintCfg(Graphics g, Ball host){
+		
+	}
+	
+	/**
+	 * The painxfrm method is implemented in every subclass to specify
+	 * variable painting.
+	 * @param g is the Graphics GUI object
+	 * @param host is the ball object that is being painted
+	 * @param myAT is the AffineTransform
+	 */
+	public abstract void paintXfrm(Graphics g, Ball host, AffineTransform myAT);
+
+}

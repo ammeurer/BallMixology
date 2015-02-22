@@ -1,0 +1,15 @@
+package paint.shape;
+
+import java.awt.Point;
+import java.awt.geom.AffineTransform;
+
+public class TriPolygonFac extends PolygonFactory {
+	
+	
+
+	public TriPolygonFac(AffineTransform at, double scaleFactor, Point[] points) {
+		super(at, scaleFactor, points);
+		// TODO Auto-generated constructor stub
+	}
+
+}

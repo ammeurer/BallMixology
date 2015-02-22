@@ -1,0 +1,37 @@
+package strategies;
+
+
+
+import java.awt.Color;
+
+import balls.Ball;
+import balls.Dispatcher;
+import util.Randomizer;
+
+/*
+ * DiscoStrategy changes color each timer cycle.
+ */
+public class DiscoStrategy implements IUpdateStrategy {
+		
+		/*
+		 * Random object to generate random color
+		 */
+		private Randomizer rand = new Randomizer();
+		
+		
+		
+	
+		/*
+		 * For DiscoBall, updateState sets the ball to a new color.
+		 * 
+		 */
+		public void updateState(Ball ball, Dispatcher d) {
+			Color newColor = rand.randomColor();
+			//Graphics g = ball.getPanel().getGraphics();
+			ball.setColor(newColor);
+			
+		}
+	
+	}
+
+

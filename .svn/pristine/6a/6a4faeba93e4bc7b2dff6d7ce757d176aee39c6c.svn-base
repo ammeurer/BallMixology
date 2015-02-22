@@ -1,0 +1,37 @@
+package strategies;
+
+import java.awt.Point;
+import java.awt.Rectangle;
+
+import balls.Ball;
+import balls.Dispatcher;
+import util.Randomizer;
+/**
+ * DodgeStrategy changes its velocity every 3 clock cycles 
+ * for erratic movement like it is dodging someone
+ * @author ammeurer
+ *
+ */
+public class DodgeStrategy implements IUpdateStrategy {
+	
+	Randomizer rand = new Randomizer();
+	
+	Rectangle rect = new Rectangle(50, 50);
+	
+	
+	int wait = 0;
+
+	@Override
+	public void updateState(Ball thisBall, Dispatcher d) {
+		if(wait == 3){
+			Point v = rand.randomVel(rect);
+			thisBall.setVelocity(v);
+			wait = 0;
+		}
+		else{
+			wait++;
+		}
+
+	}
+
+}

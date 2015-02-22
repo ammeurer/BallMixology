@@ -1,0 +1,46 @@
+package paint.shape;
+
+import java.awt.Point;
+import java.awt.Polygon;
+import java.awt.Shape;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Rectangle2D;
+
+public class PolygonFactory implements IShapeFactory {
+	
+	
+	private AffineTransform AT;
+	
+	private double scale;
+	
+
+	private Polygon polygon;
+	
+	private Rectangle2D bounds;
+	
+	private double xCenter;
+	
+	private double yCenter;
+	
+	
+	public PolygonFactory(AffineTransform at, double scaleFactor, Point[] points){
+		AT = at;
+		scale = scaleFactor;
+		polygon = new Polygon();
+		for(int i = 0; i < points.length; i++){
+			polygon.addPoint(points[i].x,points[i].y);
+
+		}
+		bounds = polygon.getBounds2D();
+		xCenter = bounds.getCenterX();
+		yCenter = bounds.getCenterY();
+	}
+
+	@Override
+	public Shape makeShape(double x, double y, double xScale, double yScale) {
+	    AT.setToTranslation(x, y);
+	    AT.scale(xScale*scale, yScale*scale);  // optional rotation can be added as well
+	    return AT.createTransformedShape(polygon);
+	}
+
+}

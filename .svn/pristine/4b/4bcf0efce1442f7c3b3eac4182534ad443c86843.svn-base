@@ -1,0 +1,11 @@
+package paint;
+
+public class ButterflyPaintStrategy extends UprightImagePaintStrategy {
+	public ButterflyPaintStrategy(){
+		this("images/butterfly.gif", .5);
+	}
+
+	public ButterflyPaintStrategy(String filename, double fillFactor) {
+		super(filename, fillFactor);
+	}
+}

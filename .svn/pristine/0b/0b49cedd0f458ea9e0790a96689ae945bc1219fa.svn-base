@@ -1,0 +1,19 @@
+package balls;
+
+import java.awt.Component;
+
+import strategies.IUpdateStrategy;
+
+/*
+ * ViewAdapter is anonymously instantiated in Controller
+ * Allows model to communicate with view.
+ */
+public interface ViewAdapter {
+
+	
+	public Component getPanel();
+		
+	public void update();
+	public IUpdateStrategy getSwitcher();
+
+}

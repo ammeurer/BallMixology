@@ -1,0 +1,13 @@
+package paint;
+
+public class BirdPaintStrategy extends UprightImagePaintStrategy {
+	
+	public BirdPaintStrategy(){
+		this("images/humbird_animate.gif", .5);
+	}
+
+	public BirdPaintStrategy(String filename, double fillFactor) {
+		super(filename, fillFactor);
+	}
+
+}

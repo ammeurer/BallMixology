@@ -1,0 +1,33 @@
+package strategies;
+
+import balls.Ball;
+import balls.Dispatcher;
+
+
+
+/**
+ * SwitcherStrategy allows the user to change all balls at once
+ * @author ammeurer
+ *
+ */
+public class SwitcherStrategy implements IUpdateStrategy {
+
+	public static SwitcherStrategy Singleton = new SwitcherStrategy();
+	
+	public SwitcherStrategy(){
+		
+	}
+		private IUpdateStrategy strategy = new StraightStrategy();
+
+		public void updateState(Ball context, Dispatcher d) {
+			strategy.updateState(context, d);
+		}
+
+		public void setStrategy(IUpdateStrategy newStrategy) {
+			strategy = newStrategy;
+		}
+		public IUpdateStrategy getStrategy(){
+			return strategy;
+			
+		}
+}

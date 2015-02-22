@@ -1,0 +1,321 @@
+package model;
+
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Graphics;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Timer;
+
+import model.ball.Ball;
+import model.ball.Dispatcher;
+import model.ball.IBallCmd;
+import paint_strategies.EllipsePaintStrategy;
+import paint_strategies.IPaintStrategy;
+import paint_strategies.IPaintStrategyFac;
+import view.*;
+import update_strategies.IStrategyFac;
+import update_strategies.IUpdateStrategy;
+import update_strategies.MultiStrategy;
+import update_strategies.StraightStrategy;
+import update_strategies.SwitcherStrategy;
+import util.*;
+
+import java.awt.geom.AffineTransform;
+
+
+
+public class BallWorldModel {
+	
+	/**
+	 * adapter allows the model to communicate to the view via the controller
+	 */
+	private ViewAdapter adapter;
+	
+	/**
+	 * timer that animates balls
+	 */
+	private Timer timer;
+	
+	/**
+	 * dispatcher observes all the balls and triggers updates
+	 */
+	private Dispatcher dispatcher;
+	
+	/**
+	 * Randomizer generates random values.
+	 */
+	private Randomizer random = new Randomizer();
+	
+	/**
+	 * Switch object for all balls
+	 */
+	  private SwitcherStrategy switcher = new SwitcherStrategy();
+
+
+	/**
+	 * Constructor initializes adapter and dispatcher.
+	 */
+	public BallWorldModel(ViewAdapter viewAdapter){
+		this.adapter = viewAdapter;
+		dispatcher = new Dispatcher();
+	}
+	
+	/**
+	 * start method starts up timer and anything else that needs to happen 
+	 * when the GUI is first run.
+	 */
+	public void start(){
+		int delay = 50; //timer cycle length
+		ActionListener action = new ActionListener() {
+			public void actionPerformed(ActionEvent e){
+				adapter.update();
+			}
+		};
+		timer = new Timer(delay, action);
+		timer.start();
+	}
+	
+	/**
+	 * clearBalls wipes all the balls from the GUI.
+	 */
+	public void clearBalls(){
+		
+		dispatcher.deleteObservers(); //Remove balls by ceasing to update them 
+	}
+	
+
+/**
+ * Triggers update method of all balls and anonymously instantiates
+ * an IBallCmd object.
+ * @param g Graphics object
+ */
+	public void update(final Graphics g){
+		dispatcher.notifyAll(new IBallCmd(){
+
+			@Override
+			public void apply(Ball context, Dispatcher disp) {
+				int newXLoc = context.getLocation().x += context.getVelocity().x;
+				int newYLoc = context.getLocation().y += context.getVelocity().y;
+				Point newLocation = new Point(newXLoc, newYLoc);
+				context.setLocation(newLocation);
+				context.bounce();
+			
+
+				context.getStrategy().updateState(context, dispatcher);
+				context.paint((Graphics)g);
+			}
+			
+		});
+	}
+	  /**
+	  * The following method returns an instance of a Ball, given a fully qualified class name (package.classname) of
+	  * a strategy class.
+	  * The method assumes that there is only one constructor for the supplied class that has the same *number* of
+	  * input parameters as specified in the args array and that it conforms to a specific
+	  * signature, i.e. specific order and types of input parameters in the args array.
+	  * @param className A string that is the fully qualified class name of the desired object
+	  * @return An instance of the supplied class. 
+	  */
+	  public Ball loadBall(IUpdateStrategy thisStrategy, IPaintStrategy thisPaint) {
+	  
+		  System.out.println(thisStrategy.toString());  
+		  System.out.println(thisPaint.toString());  
+
+		  Rectangle rectLoc = new Rectangle(300, 5);
+		  double radMin = 3.0;
+		  double radMax = 30.0;
+		  Rectangle rectVel = new Rectangle(30, 30);
+		  Point startLoc = random.randomLoc(rectLoc);
+		  Point startVel = random.randomVel(rectVel);
+		  double startRadius = random.randomDouble(radMin, radMax);
+		  Color startColor = random.randomColor();
+		  Component theCanvas = adapter.getPanel();
+	    	  
+
+		  Ball returnBall = new Ball(startLoc, startRadius, startVel, startColor, theCanvas, thisStrategy, thisPaint);
+		  dispatcher.addObserver(returnBall);
+		  return returnBall;
+
+	  }
+	
+	  /**
+	  * The following method returns an instance of an IUpdateStrategy, given a fully qualified class name (package.classname) of
+	  * a subclass of ABall.
+	  * The method assumes that there is only one constructor for the supplied class that has the same *number* of
+	  * input parameters as specified in the args array and that it conforms to a specific
+	  * signature, i.e. specific order and types of input parameters in the args array.
+	  * @param className A string that is the fully qualified class name of the desired object
+	  * @return An instance of the supplied class. 
+	  */
+	  public IUpdateStrategy loadStrategy(String strategyName) {
+	      try {
+	    	   
+	          Object[] args = new Object[]{}; // YOUR CONSTRUCTOR MAY BE DIFFERENT!!
+	          java.lang.reflect.Constructor<?> cs[] = Class.forName(strategyName).getConstructors();  // get all the constructors
+	          java.lang.reflect.Constructor<?> c = null; 
+	          for(int i=0;i < cs.length; i++) {  // find the first constructor with the right number of input parameters
+	              if(args.length == (cs[i]).getParameterTypes().length) {
+	                  c = cs[i];
+	                  break;
+	              }
+	          }
+	          IUpdateStrategy returnStrategy = (IUpdateStrategy) c.newInstance(args);
+	          System.out.println(returnStrategy.toString());
+	          return returnStrategy;
+	    }
+	    catch(Exception ex) {
+	      System.err.println("Class "+strategyName+" failed to load. \nException = \n"+ ex);
+	      ex.printStackTrace();  // print the stack trace to help in debugging.
+	      return null;
+	    }
+	  }	
+	  
+	  /**
+		  * The following method returns an instance of an IPaintStrategy, given a fully qualified class name (package.classname) of
+		  * a subclass of ABall.
+		  * The method assumes that there is only one constructor for the supplied class that has the same *number* of
+		  * input parameters as specified in the args array and that it conforms to a specific
+		  * signature, i.e. specific order and types of input parameters in the args array.
+		  * @param className A string that is the fully qualified class name of the desired object
+		  * @return An instance of the supplied class. 
+		  */
+	  public IPaintStrategy loadPaintStrategy(String paintName){
+		     try {
+		    	 System.out.println("got to loadPaintStrategy for " + paintName);
+		          Object[] args = new Object[]{}; 
+		          java.lang.reflect.Constructor<?> cs[] = Class.forName(paintName).getConstructors();  // get all the constructors
+		          java.lang.reflect.Constructor<?> c = null; 
+		          for(int i=0;i < cs.length; i++) {  // find the first constructor with the right number of input parameters
+		              if(args.length == (cs[i]).getParameterTypes().length) {
+		                  c = cs[i];
+		                  break;
+		              }
+		          }
+		          IPaintStrategy returnStrategy = (IPaintStrategy) c.newInstance(args);
+		          System.out.println(returnStrategy.toString());
+		          return returnStrategy;
+		    }
+		    catch(Exception ex) {
+		      System.err.println("Class "+paintName+" failed to load. \nException = \n"+ ex);
+		      ex.printStackTrace();  // print the stack trace to help in debugging.
+		      return null;
+		    }
+	  }
+
+	  
+	    /**
+	     * A factory for a beeping error strategy that beeps the speaker every 25 updates.
+	     * Either use the _errorStrategyFac variable directly if you need a factory that makes an error strategy,
+	     * or call _errorStrategyFac.make() to create an instance of a beeping error strategy.
+	     */
+	    private IStrategyFac errorStrategyFac = new IStrategyFac(){
+	        @Override
+	        /**
+	         * Make the beeping error strategy
+	         * @return  An instance of a beeping error strategy
+	         */
+	        public IUpdateStrategy make() {
+	            return new IUpdateStrategy() {
+	                private int count = 0; // update counter
+	                @Override
+	                /**
+	                 * Beep the speaker every 25 updates
+	                 */
+	                public void updateState(Ball context, Dispatcher d) {
+	                    if(25 < count++){
+	                        java.awt.Toolkit.getDefaultToolkit().beep(); 
+	                        count = 0;
+	                    }
+	                }
+					@Override
+					public void init(Ball context) {
+						// TODO Auto-generated method stub
+						
+					}
+	            };
+	        }
+	    };
+	    
+	 /**
+	  * makeStrategyFac allows us to send packages b/t the model and view.   
+	  * @param className is the name of the strategy to make
+	  * @return an IStrategyFac
+	  */
+	 public IStrategyFac makeStrategyFac(final String className){
+		 if(null == className) return errorStrategyFac;
+		 return new IStrategyFac(){
+			 public IUpdateStrategy make(){
+				 System.out.println(className);
+				 return loadStrategy(className);
+			 }
+			 public String toString(){
+				 return className;
+			 }
+		 };
+	 }
+	 
+	 /**
+	  * makePaintStrategyFac allows us to send packages b/t the model and view.   
+	  * @param className is the name of the strategy to make
+	  * @return an IPaintStrategyFac
+	  */
+	 public IPaintStrategyFac makePaintStrategyFac(final String className){
+		 System.out.println("Got to the makePaintFac for " + className);
+		 if(null == className) return null;
+		 return new IPaintStrategyFac(){
+			 public IPaintStrategy make(){
+				 System.out.println(className);
+				 return loadPaintStrategy(className);
+			 }
+			 public String toString(){
+				 return className;
+			 }
+		 };
+	 }
+	 
+	 /**
+	  * Function to package two IUpdateStrategies together
+	  * @param stratFac1 strategy to combine
+	  * @param stratFac2 strategy to combine
+	  * @return and IStrategyFac that contains two strategies
+	  */
+	 public IStrategyFac combineStrategyFacs(final IStrategyFac stratFac1, final IStrategyFac stratFac2){
+		 if (null == stratFac1 || null == stratFac2) return errorStrategyFac;
+		 return new IStrategyFac() {
+			 public IUpdateStrategy make() {
+				 return new MultiStrategy(stratFac1.make(), stratFac2.make());
+			 }
+			 public String toString(){
+				 return stratFac1.toString() + "-" + stratFac2.toString();
+			 }
+		 };
+	 }
+
+	 /**
+	  * Set a new strategy for the switcher balls
+	  * @param mySwitcher new strategy for Switcher balls
+	  */
+	 public void setSwitcher(IUpdateStrategy mySwitcher) {
+		 switcher.setStrategy(mySwitcher);
+	}
+	/**
+	 * Getter method for switcher strategy
+	 */
+	public IUpdateStrategy getSwitcher(){
+		return adapter.getSwitcher();
+	}
+
+	/**
+	 * Switch all the balls at once to a single strategy
+	 */
+	public void makeSwitcherBall() {
+		// TO-DO grab paint strategy from view 
+		this.loadBall(switcher, null);
+	}
+	
+	
+}

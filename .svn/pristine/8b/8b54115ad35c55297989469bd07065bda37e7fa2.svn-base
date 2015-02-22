@@ -1,0 +1,9 @@
+package balls;
+
+import paint.IPaintStrategy;
+
+public interface IPaintStrategyFac {
+	
+	public IPaintStrategy make();
+
+}

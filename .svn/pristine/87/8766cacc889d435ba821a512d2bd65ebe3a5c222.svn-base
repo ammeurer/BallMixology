@@ -1,0 +1,21 @@
+package paint;
+
+import java.awt.Point;
+import java.awt.geom.AffineTransform;
+
+import paint.shape.PolygonFactory;
+
+public class TrianglePaintStrategy extends PolygonPaintStrategy {
+	
+	
+	private static Point [] points = {new Point(0,0), new Point(1,0), new Point(1,((int)Math.sqrt(5.0))/2)};
+	
+	public TrianglePaintStrategy(){	
+		this(new AffineTransform(), 0, 0, 1.0, 1.0);	
+	}
+
+	public TrianglePaintStrategy(AffineTransform myAT, double x, double y, double xScale, double yScale) {
+		super(myAT, (new PolygonFactory(myAT, 1.0, points)).makeShape(x, y, xScale, yScale));
+	}
+
+}

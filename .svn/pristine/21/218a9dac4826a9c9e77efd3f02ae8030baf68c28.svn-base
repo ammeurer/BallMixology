@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_Djr2IC9uEeOq3KT-lRHlww">
+  <modelElement href="Interactions.uml#_DWMMsC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H8XtoC9uEeOq3KT-lRHlww" sourceAnchor="170.0,0.0" targetAnchor="0.0,32.0" target="_H8aw8C9uEeOq3KT-lRHlww" source="_H8aw8C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Ed6pwC9uEeOq3KT-lRHlww"/>
+    <bendpoints xmi:id="_o30bAC9uEeOq3KT-lRHlww" sourceY="-72" targetX="171" targetY="-105"/>
+    <bendpoints xmi:id="_o30bAS9uEeOq3KT-lRHlww" sourceX="-313" sourceY="-72" targetX="-142" targetY="-105"/>
+    <bendpoints xmi:id="_o30bAi9uEeOq3KT-lRHlww" sourceX="-313" sourceY="33" targetX="-142"/>
+    <stereotypes xmi:id="_H8Zi0C9uEeOq3KT-lRHlww" name="Reference">
+      <modelElement href="Interactions.uml#_Ed7Q0C9uEeOq3KT-lRHlww"/>
+    </stereotypes>
+    <nameVisual xmi:id="_H8Y7wC9uEeOq3KT-lRHlww" text="">
+      <visualProperties xmi:id="_IFAsQC9uEeOq3KT-lRHlww" position="233.0,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_H8Y7wS9uEeOq3KT-lRHlww" aggregationKind="NONE" name="">
+      <modelElement href="Interactions.uml#_Ed6pwS9uEeOq3KT-lRHlww"/>
+      <visualProperties xmi:id="_IFAFMC9uEeOq3KT-lRHlww" position="-21.0,-46.0"/>
+      <visibility xmi:id="_H8Zi0i9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_H8Zi0S9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_H8Y7wi9uEeOq3KT-lRHlww" aggregationKind="NONE" name="NULL_STRATEGY" navigable="true">
+      <modelElement href="Interactions.uml#_EV2S4C9uEeOq3KT-lRHlww"/>
+      <visualProperties xmi:id="_IFAsQS9uEeOq3KT-lRHlww" position="-110.0,5.000000000000114"/>
+      <visibility xmi:id="_H8Zi1C9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_H8Zi0y9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8YUsS9uEeOq3KT-lRHlww" targetItem="_H8aw8C9uEeOq3KT-lRHlww" sourceItem="_H8YUsC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H8aJ4C9uEeOq3KT-lRHlww" target="_H8aw8C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EeClkS9uEeOq3KT-lRHlww"/>
+    <stereotypes xmi:id="_H8aJ4S9uEeOq3KT-lRHlww" name="Reference">
+      <modelElement href="Interactions.uml#_EeClky9uEeOq3KT-lRHlww"/>
+    </stereotypes>
+    <nameVisual xmi:id="_H8aJ4i9uEeOq3KT-lRHlww" text=""/>
+    <sourceRole xmi:id="_H8aJ4y9uEeOq3KT-lRHlww" aggregationKind="NONE" name="">
+      <modelElement href="Interactions.uml#_EeClki9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H8aJ5C9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_H8aJ5S9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_H8aJ5i9uEeOq3KT-lRHlww" aggregationKind="NONE" name="interact" navigable="true">
+      <modelElement href="Interactions.uml#_Ec4H8S9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H8aJ5y9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_Ec4H8i9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H8aJ6C9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H8aJ6S9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H8d0QC9uEeOq3KT-lRHlww" sourceAnchor="294.0,0.0" targetAnchor="170.0,64.0" target="_H8aw8C9uEeOq3KT-lRHlww" source="_H8j64C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Ed9tEy9uEeOq3KT-lRHlww"/>
+    <stereotypes xmi:id="_H8fCZS9uEeOq3KT-lRHlww" name="Reference">
+      <modelElement href="Interactions.uml#_Ed-UIC9uEeOq3KT-lRHlww"/>
+    </stereotypes>
+    <nameVisual xmi:id="_H8fCYi9uEeOq3KT-lRHlww" text="">
+      <visualProperties xmi:id="_IFB6YC9uEeOq3KT-lRHlww" position="-82.5,14.833333333333371"/>
+    </nameVisual>
+    <sourceRole xmi:id="_H8fCYy9uEeOq3KT-lRHlww" aggregationKind="NONE" name="">
+      <modelElement href="Interactions.uml#_Ed9tFC9uEeOq3KT-lRHlww"/>
+      <visualProperties xmi:id="_IFBTUC9uEeOq3KT-lRHlww" position="2.5,-55.66666666666663"/>
+      <visibility xmi:id="_H8iFsC9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_H8heoC9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_H8fCZC9uEeOq3KT-lRHlww" aggregationKind="NONE" name="_s1" navigable="true">
+      <modelElement href="Interactions.uml#_EcyBUC9uEeOq3KT-lRHlww"/>
+      <visualProperties xmi:id="_IFChcC9uEeOq3KT-lRHlww" position="-36.5,14.666666666666629"/>
+      <visibility xmi:id="_H8iFsi9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H8iFsS9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_H8ebUC9uEeOq3KT-lRHlww" sourceAnchor="324.0,0.0" targetAnchor="200.0,64.0" target="_H8aw8C9uEeOq3KT-lRHlww" source="_H8j64C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Ed-UIS9uEeOq3KT-lRHlww"/>
+    <stereotypes xmi:id="_H8fpcS9uEeOq3KT-lRHlww" name="Reference">
+      <modelElement href="Interactions.uml#_Ed-7MC9uEeOq3KT-lRHlww"/>
+    </stereotypes>
+    <nameVisual xmi:id="_H8fCZi9uEeOq3KT-lRHlww" text="">
+      <visualProperties xmi:id="_IFDvkC9uEeOq3KT-lRHlww" position="41.5,26.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_H8fCZy9uEeOq3KT-lRHlww" aggregationKind="NONE" name="">
+      <modelElement href="Interactions.uml#_Ed-UIi9uEeOq3KT-lRHlww"/>
+      <visualProperties xmi:id="_IFDIgC9uEeOq3KT-lRHlww" position="2.5,-55.66666666666663"/>
+      <visibility xmi:id="_H8jT0C9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_H8iswC9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_H8fpcC9uEeOq3KT-lRHlww" aggregationKind="NONE" name="_s2" navigable="true">
+      <modelElement href="Interactions.uml#_EcyBUi9uEeOq3KT-lRHlww"/>
+      <visualProperties xmi:id="_IFDvkS9uEeOq3KT-lRHlww" position="41.5,1.0"/>
+      <visibility xmi:id="_H8jT0i9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H8jT0S9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_H8ebUS9uEeOq3KT-lRHlww" sourceAnchor="188.0,0.0" targetAnchor="64.0,64.0" dashed="true" superClass="_H8aw8C9uEeOq3KT-lRHlww" subClass="_H8j64C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Eah-kC9uEeOq3KT-lRHlww"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8fCYS9uEeOq3KT-lRHlww" targetItem="_H8j64C9uEeOq3KT-lRHlww" sourceItem="_H8fCYC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8ozYS9uEeOq3KT-lRHlww" targetItem="_H8sdwC9uEeOq3KT-lRHlww" sourceItem="_H8ozYC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8pacS9uEeOq3KT-lRHlww" targetItem="_H8sdyC9uEeOq3KT-lRHlww" sourceItem="_H8pacC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8qokC9uEeOq3KT-lRHlww" targetItem="_H8sd3S9uEeOq3KT-lRHlww" sourceItem="_H8qBgC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8rPoS9uEeOq3KT-lRHlww" targetItem="_H8sd6S9uEeOq3KT-lRHlww" sourceItem="_H8rPoC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H80ZkC9uEeOq3KT-lRHlww" targetItem="_H83c4C9uEeOq3KT-lRHlww" sourceItem="_H8zygC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H81AoC9uEeOq3KT-lRHlww" targetItem="_H83c6C9uEeOq3KT-lRHlww" sourceItem="_H80ZkS9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H81nsS9uEeOq3KT-lRHlww" targetItem="_H83c-S9uEeOq3KT-lRHlww" sourceItem="_H81nsC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8210S9uEeOq3KT-lRHlww" targetItem="_H83dCy9uEeOq3KT-lRHlww" sourceItem="_H8210C9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_H89jgC9uEeOq3KT-lRHlww" sourceAnchor="183.0,0.0" targetAnchor="341.0,32.0" dashed="true" superClass="_H8aw8C9uEeOq3KT-lRHlww" subClass="_H8_YsC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EajzwC9uEeOq3KT-lRHlww"/>
+    <bendpoints xmi:id="_o3zz8i9uEeOq3KT-lRHlww" sourceY="-32" targetX="307"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H8-KkS9uEeOq3KT-lRHlww" targetItem="_H8_YsC9uEeOq3KT-lRHlww" sourceItem="_H8-KkC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H9CcAS9uEeOq3KT-lRHlww" targetItem="_H9GGYC9uEeOq3KT-lRHlww" sourceItem="_H9CcAC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H9DDES9uEeOq3KT-lRHlww" targetItem="_H9GGaC9uEeOq3KT-lRHlww" sourceItem="_H9DDEC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H9DqIS9uEeOq3KT-lRHlww" targetItem="_H9GGeS9uEeOq3KT-lRHlww" sourceItem="_H9DqIC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H9E4QS9uEeOq3KT-lRHlww" targetItem="_H9GGiy9uEeOq3KT-lRHlww" sourceItem="_H9E4QC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_H9Ll8S9uEeOq3KT-lRHlww" targetItem="_H9MNAC9uEeOq3KT-lRHlww" sourceItem="_H9Ll8C9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LcpWcS9uEeOq3KT-lRHlww" targetItem="_LctA0C9uEeOq3KT-lRHlww" sourceItem="_LcpWcC9uEeOq3KT-lRHlww"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LcpWci9uEeOq3KT-lRHlww" sourceAnchor="245.0,0.0" targetAnchor="139.0,80.0" dashed="true" superClass="_LctA0C9uEeOq3KT-lRHlww" subClass="_H9GGYC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EabQ4S9uEeOq3KT-lRHlww"/>
+    <bendpoints xmi:id="_o3zz8C9uEeOq3KT-lRHlww" sourceY="-27" targetX="685" targetY="233"/>
+    <bendpoints xmi:id="_o3zz8S9uEeOq3KT-lRHlww" sourceX="-685" sourceY="-27" targetY="233"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Lcp9gC9uEeOq3KT-lRHlww" sourceAnchor="165.0,0.0" targetAnchor="139.0,80.0" dashed="true" superClass="_LctA0C9uEeOq3KT-lRHlww" subClass="_H9MNAC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EafiUC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_LctA3S9uEeOq3KT-lRHlww" position="-580.0,473.0"/>
+    <bendpoints xmi:id="_o3yl0C9uEeOq3KT-lRHlww" sourceY="-36" targetX="-784" targetY="233"/>
+    <bendpoints xmi:id="_o3yl0S9uEeOq3KT-lRHlww" sourceX="784" sourceY="-36" targetY="233"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Lcp9gS9uEeOq3KT-lRHlww" sourceAnchor="240.0,0.0" targetAnchor="139.0,80.0" dashed="true" superClass="_LctA0C9uEeOq3KT-lRHlww" subClass="_H83c4C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EalB4C9uEeOq3KT-lRHlww"/>
+    <bendpoints xmi:id="_o3zM4C9uEeOq3KT-lRHlww" sourceY="-30" targetX="-320" targetY="233"/>
+    <bendpoints xmi:id="_o3zM4S9uEeOq3KT-lRHlww" sourceX="320" sourceY="-30" targetY="233"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Lcp9gi9uEeOq3KT-lRHlww" sourceAnchor="228.0,0.0" targetAnchor="139.0,80.0" dashed="true" superClass="_LctA0C9uEeOq3KT-lRHlww" subClass="_H8sdwC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EaosQC9uEeOq3KT-lRHlww"/>
+    <bendpoints xmi:id="_o3zM4i9uEeOq3KT-lRHlww" sourceY="-39" targetX="198" targetY="233"/>
+    <bendpoints xmi:id="_o3zM4y9uEeOq3KT-lRHlww" sourceX="-198" sourceY="-39" targetY="233"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Lcp9gy9uEeOq3KT-lRHlww" source="_LctA0C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Ednu0i9uEeOq3KT-lRHlww"/>
+    <nameVisual xmi:id="_LcrysC9uEeOq3KT-lRHlww" text=""/>
+    <sourceRole xmi:id="_LcrysS9uEeOq3KT-lRHlww" aggregationKind="NONE" name="strategy" navigable="true">
+      <modelElement href="Interactions.uml#_Ec3g4i9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_LcsZwS9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_LcsZwC9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Lcrysi9uEeOq3KT-lRHlww" aggregationKind="NONE" name="">
+      <modelElement href="Interactions.uml#_Ednu0y9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_LcsZwy9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_LcsZwi9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8YUsC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8YUsS9uEeOq3KT-lRHlww" text="Strategy that defines a directed interaction between two balls where the balls are NOT&#xA;equivalently processed. &#xA;&#xA;@author swong&#xA; *" item="_H8aw8C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSlS9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8fCYC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8fCYS9uEeOq3KT-lRHlww" text="MultiStrategy is a recursive tree that allows the user to combine&#xA;as many strategies as they want.&#xA;@author ammeurer&#xA; *" item="_H8j64C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSli9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8ozYC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8ozYS9uEeOq3KT-lRHlww" text="StickyStrategy makes balls stick together and makes all the sticky balls'&#xA;velocities the same after a collision with another ball.&#xA;@author ammeurer&#xA; *" item="_H8sdwC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Edl5oS9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8pacC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8pacS9uEeOq3KT-lRHlww" text="Returns the reduced mass of the two balls (m1*m2)/(m1+m2) Gives correct&#xA;&#x9; * result if one of the balls has infinite mass.&#xA;&#x9; * &#xA;&#x9; * @param mSource&#xA;&#x9; *            Mass of the source ball&#xA;&#x9; * @param mTarget&#xA;&#x9; *            Mass of the target ball" item="_H8sdyC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Edl5oi9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8qBgC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8qokC9uEeOq3KT-lRHlww" text="Updates the velocity of the source ball, given an impulse, then uses the&#xA;&#x9; * context's interactWith method to determine the post collision behavior, from the context&#xA;&#x9; * ball's perspective. The change in velocity is the impulse divided by the (source) ball's mass. To change&#xA;&#x9; * the velocity of the target ball, switch the source and target input&#xA;&#x9; * parameters and negate the impulse values.   This will also run the post collision behavior from &#xA;&#x9; * the other perspective.&#xA;&#x9; * &#xA;&#x9; * @param context&#xA;&#x9; *            The ball to update&#xA;&#x9; * @param target&#xA;&#x9; *            The ball being collided with&#xA;&#x9; * @param impX&#xA;&#x9; *            x-coordinate of the impulse&#xA;&#x9; * @param impY&#xA;&#x9; *            y-coordinate of the impulse" item="_H8sd3S9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Edl5pC9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8rPoC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8rPoS9uEeOq3KT-lRHlww" text="Calculates the impulse (change in momentum) of the collision in the&#xA;&#x9; * direction from the source to the target This method calculates the&#xA;&#x9; * impulse on the source ball. The impulse on the target ball is the&#xA;&#x9; * negative of the result. Also moves source ball out of collision range&#xA;&#x9; * along normal direction. The change in velocity of the source ball is the&#xA;&#x9; * impulse divided by the source's mass The change in velocity of the target&#xA;&#x9; * ball is the negative of the impulse divided by the target's mass&#xA;&#x9; * &#xA;&#x9; * Operational note: Even though theoretically, the difference in velocities&#xA;&#x9; * of two balls should be co-linear with the normal line between them, the&#xA;&#x9; * discrete nature of animations means that the point where collision is&#xA;&#x9; * detected may not be at the same point as the theoretical contact point.&#xA;&#x9; * This method calculates the rebound directions as if the two balls were&#xA;&#x9; * the appropriate radii such that they had just contacted&#xA;&#x9; * _at_the_point_of_collision_detection_. This may give slightly different&#xA;&#x9; * rebound direction than one would calculate if they contacted at the&#xA;&#x9; * theoretical point given by their actual radii.&#xA;&#x9; * &#xA;&#x9; * @param lSource&#xA;&#x9; *            Location of the source ball&#xA;&#x9; * @param vSource&#xA;&#x9; *            Velocity of the source ball&#xA;&#x9; * @param lTarget&#xA;&#x9; *            Location of the target ball&#xA;&#x9; * @param vTarget&#xA;&#x9; *            Velocity of the target ball&#xA;&#x9; * @param reducedMass&#xA;&#x9; *            Reduced mass of the two balls&#xA;&#x9; * @param distance&#xA;&#x9; *            Distance between the two balls.&#xA;&#x9; * @param deltaR&#xA;&#x9; *            The minimum allowed separation(sum of the ball radii) minus the actual separation(distance between ball centers). Should be a&#xA;&#x9; *            positive value.  This is the amount of overlap of the balls as measured along the line between their centers.&#xA;&#x9; * @return" item="_H8sd6S9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Edl5oy9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8zygC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H80ZkC9uEeOq3KT-lRHlww" text="SlideStrategy causes balls to slide past each other when &#xA;&#x9; * they overlap&#xA;&#x9; * @author ammeurer&#xA;&#x9; *" item="_H83c4C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSmC9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H80ZkS9uEeOq3KT-lRHlww" sourceConnectionVisual="_H81AoC9uEeOq3KT-lRHlww" text="Returns the reduced mass of the two balls (m1*m2)/(m1+m2) Gives correct&#xA;&#x9; * result if one of the balls has infinite mass.&#xA;&#x9; * &#xA;&#x9; * @param mSource&#xA;&#x9; *            Mass of the source ball&#xA;&#x9; * @param mTarget&#xA;&#x9; *            Mass of the target ball" item="_H83c6C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSmS9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H81nsC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H81nsS9uEeOq3KT-lRHlww" text="Updates the velocity of the source ball, given an impulse, then uses the&#xA;&#x9; * context's interactWith method to determine the post collision behavior, from the context&#xA;&#x9; * ball's perspective. The change in velocity is the impulse divided by the (source) ball's mass. To change&#xA;&#x9; * the velocity of the target ball, switch the source and target input&#xA;&#x9; * parameters and negate the impulse values.   This will also run the post collision behavior from &#xA;&#x9; * the other perspective.&#xA;&#x9; * &#xA;&#x9; * @param context&#xA;&#x9; *            The ball to update&#xA;&#x9; * @param target&#xA;&#x9; *            The ball being collided with&#xA;&#x9; * @param impX&#xA;&#x9; *            x-coordinate of the impulse&#xA;&#x9; * @param impY&#xA;&#x9; *            y-coordinate of the impulse" item="_H83c-S9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_Edl5oC9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8210C9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8210S9uEeOq3KT-lRHlww" text="Calculates the impulse (change in momentum) of the collision in the&#xA;&#x9; * direction from the source to the target This method calculates the&#xA;&#x9; * impulse on the source ball. The impulse on the target ball is the&#xA;&#x9; * negative of the result. Also moves source ball out of collision range&#xA;&#x9; * along normal direction. The change in velocity of the source ball is the&#xA;&#x9; * impulse divided by the source's mass The change in velocity of the target&#xA;&#x9; * ball is the negative of the impulse divided by the target's mass&#xA;&#x9; * &#xA;&#x9; * Operational note: Even though theoretically, the difference in velocities&#xA;&#x9; * of two balls should be co-linear with the normal line between them, the&#xA;&#x9; * discrete nature of animations means that the point where collision is&#xA;&#x9; * detected may not be at the same point as the theoretical contact point.&#xA;&#x9; * This method calculates the rebound directions as if the two balls were&#xA;&#x9; * the appropriate radii such that they had just contacted&#xA;&#x9; * _at_the_point_of_collision_detection_. This may give slightly different&#xA;&#x9; * rebound direction than one would calculate if they contacted at the&#xA;&#x9; * theoretical point given by their actual radii.&#xA;&#x9; * &#xA;&#x9; * @param lSource&#xA;&#x9; *            Location of the source ball&#xA;&#x9; * @param vSource&#xA;&#x9; *            Velocity of the source ball&#xA;&#x9; * @param lTarget&#xA;&#x9; *            Location of the target ball&#xA;&#x9; * @param vTarget&#xA;&#x9; *            Velocity of the target ball&#xA;&#x9; * @param reducedMass&#xA;&#x9; *            Reduced mass of the two balls&#xA;&#x9; * @param distance&#xA;&#x9; *            Distance between the two balls.&#xA;&#x9; * @param deltaR&#xA;&#x9; *            The minimum allowed separation(sum of the ball radii) minus the actual separation(distance between ball centers). Should be a&#xA;&#x9; *            positive value.  This is the amount of overlap of the balls as measured along the line between their centers.&#xA;&#x9; * @return" item="_H83dCy9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSmi9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H8-KkC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H8-KkS9uEeOq3KT-lRHlww" text="This class is essentially the no-op IInteractStrategy object that&#xA;each ball initially has.&#xA;@author ammeurer&#xA; *" item="_H8_YsC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSly9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H9CcAC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H9CcAS9uEeOq3KT-lRHlww" text="CollideStrategy causes balls to have elactic collisions with each other when &#xA;they overlap&#xA;@author ammeurer&#xA; *" item="_H9GGYC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSkC9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H9DDEC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H9DDES9uEeOq3KT-lRHlww" text="Returns the reduced mass of the two balls (m1*m2)/(m1+m2) Gives correct&#xA;result if one of the balls has infinite mass.&#xA;&#xA;@param mSource&#xA;           Mass of the source ball&#xA;@param mTarget&#xA;           Mass of the target ball" item="_H9GGaC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSkS9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H9DqIC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H9DqIS9uEeOq3KT-lRHlww" text="Updates the velocity of the source ball, given an impulse, then uses the&#xA;context's interactWith method to determine the post collision behavior, from the context&#xA;ball's perspective. The change in velocity is the impulse divided by the (source) ball's mass. To change&#xA;the velocity of the target ball, switch the source and target input&#xA;parameters and negate the impulse values.   This will also run the post collision behavior from &#xA;the other perspective.&#xA;&#xA;@param context&#xA;           The ball to update&#xA;@param target&#xA;           The ball being collided with&#xA;@param impX&#xA;           x-coordinate of the impulse&#xA;@param impY&#xA;           y-coordinate of the impulse" item="_H9GGeS9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSky9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H9E4QC9uEeOq3KT-lRHlww" sourceConnectionVisual="_H9E4QS9uEeOq3KT-lRHlww" text="Calculates the impulse (change in momentum) of the collision in the&#xA;direction from the source to the target This method calculates the&#xA;impulse on the source ball. The impulse on the target ball is the&#xA;negative of the result. Also moves source ball out of collision range&#xA;along normal direction. The change in velocity of the source ball is the&#xA;impulse divided by the source's mass The change in velocity of the target&#xA;ball is the negative of the impulse divided by the target's mass&#xA;&#xA;Operational note: Even though theoretically, the difference in velocities&#xA;of two balls should be co-linear with the normal line between them, the&#xA;discrete nature of animations means that the point where collision is&#xA;detected may not be at the same point as the theoretical contact point.&#xA;This method calculates the rebound directions as if the two balls were&#xA;the appropriate radii such that they had just contacted&#xA;_at_the_point_of_collision_detection_. This may give slightly different&#xA;rebound direction than one would calculate if they contacted at the&#xA;theoretical point given by their actual radii.&#xA;&#xA;@param lSource&#xA;           Location of the source ball&#xA;@param vSource&#xA;           Velocity of the source ball&#xA;@param lTarget&#xA;           Location of the target ball&#xA;@param vTarget&#xA;           Velocity of the target ball&#xA;@param reducedMass&#xA;           Reduced mass of the two balls&#xA;@param distance&#xA;           Distance between the two balls.&#xA;@param deltaR&#xA;           The minimum allowed separation(sum of the ball radii) minus the actual separation(distance between ball centers). Should be a&#xA;           positive value.  This is the amount of overlap of the balls as measured along the line between their centers.&#xA;@return" item="_H9GGiy9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSki9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_H9Ll8C9uEeOq3KT-lRHlww" sourceConnectionVisual="_H9Ll8S9uEeOq3KT-lRHlww" text="When a ball with a ColorConform Strategy is created, all &#xA;the existing balls in the GUI become the same color as the new ball&#xA;@author ammeurer&#xA; *" item="_H9MNAC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdlSlC9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LcpWcC9uEeOq3KT-lRHlww" sourceConnectionVisual="_LcpWcS9uEeOq3KT-lRHlww" text="Interface for strategies&#xA;@author ammeurer&#xA; *" item="_LctA0C9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EdqLEy9uEeOq3KT-lRHlww"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_LctA0C9uEeOq3KT-lRHlww" comments="_LcpWcC9uEeOq3KT-lRHlww" targetConnectionVisual="_LcpWcS9uEeOq3KT-lRHlww" name="IUpdateStrategy" associationsOut="_Lcp9gy9uEeOq3KT-lRHlww" subclassedBy="_LcpWci9uEeOq3KT-lRHlww _Lcp9gC9uEeOq3KT-lRHlww _Lcp9gS9uEeOq3KT-lRHlww _Lcp9gi9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EXU5kC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_LctA0S9uEeOq3KT-lRHlww" position="314.0,-55.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LctA0i9uEeOq3KT-lRHlww" label="+"/>
+    <operations xmi:id="_LctA0y9uEeOq3KT-lRHlww" name="updateState">
+      <modelElement href="Interactions.uml#_Ebg2AS9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_LctA1C9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_LctA1S9uEeOq3KT-lRHlww" name="thisBall">
+        <modelElement href="Interactions.uml#_Ebg2Ai9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_LctA1i9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LctA1y9uEeOq3KT-lRHlww" name="d">
+        <modelElement href="Interactions.uml#_EbhdEC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_LctA2C9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LctA2S9uEeOq3KT-lRHlww" name="init">
+      <modelElement href="Interactions.uml#_EbhdES9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_LctA2i9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_LctA2y9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EbhdEi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_LctA3C9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H9MNAC9uEeOq3KT-lRHlww" comments="_H9Ll8C9uEeOq3KT-lRHlww" targetConnectionVisual="_H9Ll8S9uEeOq3KT-lRHlww" name="ColorConformStrategy" generalizations="_Lcp9gC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EVyogC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_H9MNAS9uEeOq3KT-lRHlww" position="-496.0,295.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_H9MNAi9uEeOq3KT-lRHlww" label="+"/>
+    <operations xmi:id="_H9MNAy9uEeOq3KT-lRHlww" name="updateState">
+      <modelElement href="Interactions.uml#_EafiUS9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H9MNBC9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EagJYi9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H9MNBS9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_EagwcC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H9MNBi9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H9MNBy9uEeOq3KT-lRHlww" name="thisBall">
+        <modelElement href="Interactions.uml#_EagJYC9uEeOq3KT-lRHlww"/>
+        <keywords xmi:id="_H9MNCC9uEeOq3KT-lRHlww" keyword="final"/>
+        <type xmi:id="_H9MNCS9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9MNCi9uEeOq3KT-lRHlww" name="d">
+        <modelElement href="Interactions.uml#_EagJYS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9MNCy9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H9MNDC9uEeOq3KT-lRHlww" name="init">
+      <modelElement href="Interactions.uml#_Eagwci9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H9MNDS9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EagwdC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H9MNDi9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_EahXgC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H9MNDy9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H9MNEC9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_Eagwcy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9MNES9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H83c4C9uEeOq3KT-lRHlww" comments="_H8zygC9uEeOq3KT-lRHlww" targetConnectionVisual="_H80ZkC9uEeOq3KT-lRHlww" name="SlideStrategy" generalizations="_Lcp9gS9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EV-OsC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_H83c4S9uEeOq3KT-lRHlww" position="-107.0,289.0" size="480.0,141.0"/>
+    <visibility xmi:id="_H83c4i9uEeOq3KT-lRHlww" label="+"/>
+    <attributes xmi:id="_H83c4y9uEeOq3KT-lRHlww" defaultValue="1.1" name="Nudge">
+      <modelElement href="Interactions.uml#_EcyoYS9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H83c5C9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EcyoYy9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H83c5S9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H83c5i9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+      <type xmi:id="_H83c5y9uEeOq3KT-lRHlww" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_H83c6C9uEeOq3KT-lRHlww" comments="_H80ZkS9uEeOq3KT-lRHlww" targetConnectionVisual="_H81AoC9uEeOq3KT-lRHlww" name="reducedMass">
+      <modelElement href="Interactions.uml#_EV-1wC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H83c6S9uEeOq3KT-lRHlww" label="#"/>
+      <outParameters xmi:id="_H83c6i9uEeOq3KT-lRHlww">
+        <modelElement href="Interactions.uml#_EV-1wy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83c6y9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_H83c7C9uEeOq3KT-lRHlww" name="mSource">
+        <modelElement href="Interactions.uml#_EV-1wS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83c7S9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83c7i9uEeOq3KT-lRHlww" name="mTarget">
+        <modelElement href="Interactions.uml#_EV-1wi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83c7y9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H83c8C9uEeOq3KT-lRHlww" name="updateState">
+      <modelElement href="Interactions.uml#_EalB4S9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H83c8S9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_Ealo8C9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H83c8i9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_Ealo8y9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H83c8y9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H83c9C9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EalB4i9uEeOq3KT-lRHlww"/>
+        <keywords xmi:id="_H83c9S9uEeOq3KT-lRHlww" keyword="final"/>
+        <type xmi:id="_H83c9i9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83c9y9uEeOq3KT-lRHlww" name="dispatcher">
+        <modelElement href="Interactions.uml#_EalB4y9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83c-C9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H83c-S9uEeOq3KT-lRHlww" comments="_H81nsC9uEeOq3KT-lRHlww" targetConnectionVisual="_H81nsS9uEeOq3KT-lRHlww" name="updateCollision">
+      <modelElement href="Interactions.uml#_EamQAC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H83c-i9uEeOq3KT-lRHlww" label="#"/>
+      <parameters xmi:id="_H83c-y9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EamQAS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83c_C9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83c_S9uEeOq3KT-lRHlww" name="target">
+        <modelElement href="Interactions.uml#_Eam3EC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83c_i9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83c_y9uEeOq3KT-lRHlww" name="impX">
+        <modelElement href="Interactions.uml#_Eam3ES9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dAC9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dAS9uEeOq3KT-lRHlww" name="impY">
+        <modelElement href="Interactions.uml#_Eam3Ei9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dAi9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dAy9uEeOq3KT-lRHlww" name="dispatcher">
+        <modelElement href="Interactions.uml#_Eam3Ey9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dBC9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H83dBS9uEeOq3KT-lRHlww" name="init">
+      <modelElement href="Interactions.uml#_Eam3FC9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H83dBi9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EaneIC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H83dBy9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_EaneIS9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H83dCC9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H83dCS9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_Eam3FS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dCi9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H83dCy9uEeOq3KT-lRHlww" comments="_H8210C9uEeOq3KT-lRHlww" targetConnectionVisual="_H8210S9uEeOq3KT-lRHlww" name="impulse">
+      <modelElement href="Interactions.uml#_EcHS8C9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H83dDC9uEeOq3KT-lRHlww" label="#"/>
+      <outParameters xmi:id="_H83dDS9uEeOq3KT-lRHlww">
+        <modelElement href="Interactions.uml#_EcH6AS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dDi9uEeOq3KT-lRHlww" name="Double">
+          <modelElement href="Interactions.uml#_EacfAi9uEeOq3KT-lRHlww"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_H83dDy9uEeOq3KT-lRHlww" name="lSource">
+        <modelElement href="Interactions.uml#_EcHS8S9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dEC9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dES9uEeOq3KT-lRHlww" name="vSource">
+        <modelElement href="Interactions.uml#_EcHS8i9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dEi9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dEy9uEeOq3KT-lRHlww" name="lTarget">
+        <modelElement href="Interactions.uml#_EcHS8y9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dFC9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dFS9uEeOq3KT-lRHlww" name="vTarget">
+        <modelElement href="Interactions.uml#_EcHS9C9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dFi9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dFy9uEeOq3KT-lRHlww" name="reducedMass">
+        <modelElement href="Interactions.uml#_EcHS9S9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dGC9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dGS9uEeOq3KT-lRHlww" name="distance">
+        <modelElement href="Interactions.uml#_EcHS9i9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dGi9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H83dGy9uEeOq3KT-lRHlww" name="deltaR">
+        <modelElement href="Interactions.uml#_EcH6AC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H83dHC9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H8sdwC9uEeOq3KT-lRHlww" comments="_H8ozYC9uEeOq3KT-lRHlww" targetConnectionVisual="_H8ozYS9uEeOq3KT-lRHlww" name="StickySyncStrategy" generalizations="_Lcp9gi9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EWDHMC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_H8sdwS9uEeOq3KT-lRHlww" position="423.0,298.0" size="457.0,141.0"/>
+    <visibility xmi:id="_H8sdwi9uEeOq3KT-lRHlww" label="+"/>
+    <attributes xmi:id="_H8sdwy9uEeOq3KT-lRHlww" defaultValue="1.1" name="Nudge">
+      <modelElement href="Interactions.uml#_EczPcC9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H8sdxC9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EczPci9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H8sdxS9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H8sdxi9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+      <type xmi:id="_H8sdxy9uEeOq3KT-lRHlww" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_H8sdyC9uEeOq3KT-lRHlww" comments="_H8pacC9uEeOq3KT-lRHlww" targetConnectionVisual="_H8pacS9uEeOq3KT-lRHlww" name="reducedMass">
+      <modelElement href="Interactions.uml#_EWDuQC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H8sdyS9uEeOq3KT-lRHlww" label="#"/>
+      <outParameters xmi:id="_H8sdyi9uEeOq3KT-lRHlww">
+        <modelElement href="Interactions.uml#_EWDuQy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sdyy9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_H8sdzC9uEeOq3KT-lRHlww" name="mSource">
+        <modelElement href="Interactions.uml#_EWDuQS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sdzS9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sdzi9uEeOq3KT-lRHlww" name="mTarget">
+        <modelElement href="Interactions.uml#_EWDuQi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sdzy9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H8sd0C9uEeOq3KT-lRHlww" name="init">
+      <modelElement href="Interactions.uml#_EaosQS9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H8sd0S9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H8sd0i9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EaosQi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd0y9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H8sd1C9uEeOq3KT-lRHlww" name="updateState">
+      <modelElement href="Interactions.uml#_EapTUC9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H8sd1S9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EapTUy9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H8sd1i9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_Eap6YC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H8sd1y9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H8sd2C9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EapTUS9uEeOq3KT-lRHlww"/>
+        <keywords xmi:id="_H8sd2S9uEeOq3KT-lRHlww" keyword="final"/>
+        <type xmi:id="_H8sd2i9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd2y9uEeOq3KT-lRHlww" name="disp">
+        <modelElement href="Interactions.uml#_EapTUi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd3C9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H8sd3S9uEeOq3KT-lRHlww" comments="_H8qBgC9uEeOq3KT-lRHlww" targetConnectionVisual="_H8qokC9uEeOq3KT-lRHlww" name="updateCollision">
+      <modelElement href="Interactions.uml#_EaqhcC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H8sd3i9uEeOq3KT-lRHlww" label="#"/>
+      <parameters xmi:id="_H8sd3y9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EaqhcS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd4C9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd4S9uEeOq3KT-lRHlww" name="target">
+        <modelElement href="Interactions.uml#_Eaqhci9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd4i9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd4y9uEeOq3KT-lRHlww" name="impX">
+        <modelElement href="Interactions.uml#_Eaqhcy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd5C9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd5S9uEeOq3KT-lRHlww" name="impY">
+        <modelElement href="Interactions.uml#_EaqhdC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd5i9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd5y9uEeOq3KT-lRHlww" name="dispatcher">
+        <modelElement href="Interactions.uml#_EaqhdS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd6C9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H8sd6S9uEeOq3KT-lRHlww" comments="_H8rPoC9uEeOq3KT-lRHlww" targetConnectionVisual="_H8rPoS9uEeOq3KT-lRHlww" name="impulse">
+      <modelElement href="Interactions.uml#_EcIhEC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H8sd6i9uEeOq3KT-lRHlww" label="#"/>
+      <outParameters xmi:id="_H8sd6y9uEeOq3KT-lRHlww">
+        <modelElement href="Interactions.uml#_EcJIIi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd7C9uEeOq3KT-lRHlww" name="Double">
+          <modelElement href="Interactions.uml#_EacfAi9uEeOq3KT-lRHlww"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_H8sd7S9uEeOq3KT-lRHlww" name="lSource">
+        <modelElement href="Interactions.uml#_EcIhES9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd7i9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd7y9uEeOq3KT-lRHlww" name="vSource">
+        <modelElement href="Interactions.uml#_EcIhEi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd8C9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd8S9uEeOq3KT-lRHlww" name="lTarget">
+        <modelElement href="Interactions.uml#_EcIhEy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd8i9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd8y9uEeOq3KT-lRHlww" name="vTarget">
+        <modelElement href="Interactions.uml#_EcIhFC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd9C9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd9S9uEeOq3KT-lRHlww" name="reducedMass">
+        <modelElement href="Interactions.uml#_EcIhFS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd9i9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd9y9uEeOq3KT-lRHlww" name="distance">
+        <modelElement href="Interactions.uml#_EcJIIC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd-C9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8sd-S9uEeOq3KT-lRHlww" name="deltaR">
+        <modelElement href="Interactions.uml#_EcJIIS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8sd-i9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H9GGYC9uEeOq3KT-lRHlww" comments="_H9CcAC9uEeOq3KT-lRHlww" targetConnectionVisual="_H9CcAS9uEeOq3KT-lRHlww" name="CollideStrategy" generalizations="_LcpWci9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EVtwAC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_H9GGYS9uEeOq3KT-lRHlww" position="893.0,286.0" size="491.0,141.0"/>
+    <visibility xmi:id="_H9GGYi9uEeOq3KT-lRHlww" label="+"/>
+    <attributes xmi:id="_H9GGYy9uEeOq3KT-lRHlww" defaultValue="1.1" name="Nudge">
+      <modelElement href="Interactions.uml#_EcxaQS9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H9GGZC9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EcxaQy9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H9GGZS9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H9GGZi9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+      <type xmi:id="_H9GGZy9uEeOq3KT-lRHlww" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_H9GGaC9uEeOq3KT-lRHlww" comments="_H9DDEC9uEeOq3KT-lRHlww" targetConnectionVisual="_H9DDES9uEeOq3KT-lRHlww" name="reducedMass">
+      <modelElement href="Interactions.uml#_EVuXEC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H9GGaS9uEeOq3KT-lRHlww" label="#"/>
+      <outParameters xmi:id="_H9GGai9uEeOq3KT-lRHlww">
+        <modelElement href="Interactions.uml#_EVuXEy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGay9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_H9GGbC9uEeOq3KT-lRHlww" name="mSource">
+        <modelElement href="Interactions.uml#_EVuXES9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGbS9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGbi9uEeOq3KT-lRHlww" name="mTarget">
+        <modelElement href="Interactions.uml#_EVuXEi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGby9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H9GGcC9uEeOq3KT-lRHlww" name="updateState">
+      <modelElement href="Interactions.uml#_Eab38C9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H9GGcS9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_Eab38y9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H9GGci9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_EacfAC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H9GGcy9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H9GGdC9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_Eab38S9uEeOq3KT-lRHlww"/>
+        <keywords xmi:id="_H9GGdS9uEeOq3KT-lRHlww" keyword="final"/>
+        <type xmi:id="_H9GGdi9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGdy9uEeOq3KT-lRHlww" name="dispatcher">
+        <modelElement href="Interactions.uml#_Eab38i9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGeC9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H9GGeS9uEeOq3KT-lRHlww" comments="_H9DqIC9uEeOq3KT-lRHlww" targetConnectionVisual="_H9DqIS9uEeOq3KT-lRHlww" name="updateCollision">
+      <modelElement href="Interactions.uml#_EadtIC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H9GGei9uEeOq3KT-lRHlww" label="#"/>
+      <parameters xmi:id="_H9GGey9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EadtIS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGfC9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGfS9uEeOq3KT-lRHlww" name="target">
+        <modelElement href="Interactions.uml#_EadtIi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGfi9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGfy9uEeOq3KT-lRHlww" name="impX">
+        <modelElement href="Interactions.uml#_EadtIy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGgC9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGgS9uEeOq3KT-lRHlww" name="impY">
+        <modelElement href="Interactions.uml#_EadtJC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGgi9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGgy9uEeOq3KT-lRHlww" name="dispatcher">
+        <modelElement href="Interactions.uml#_EadtJS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGhC9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H9GGhS9uEeOq3KT-lRHlww" name="init">
+      <modelElement href="Interactions.uml#_EaeUMC9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H9GGhi9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EaeUMi9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H9GGhy9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_EaeUMy9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H9GGiC9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H9GGiS9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EaeUMS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGii9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H9GGiy9uEeOq3KT-lRHlww" comments="_H9E4QC9uEeOq3KT-lRHlww" targetConnectionVisual="_H9E4QS9uEeOq3KT-lRHlww" name="impulse">
+      <modelElement href="Interactions.uml#_EcFdwC9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H9GGjC9uEeOq3KT-lRHlww" label="#"/>
+      <outParameters xmi:id="_H9GGjS9uEeOq3KT-lRHlww">
+        <modelElement href="Interactions.uml#_EcGE1i9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGji9uEeOq3KT-lRHlww" name="Double">
+          <modelElement href="Interactions.uml#_EacfAi9uEeOq3KT-lRHlww"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_H9GGjy9uEeOq3KT-lRHlww" name="lSource">
+        <modelElement href="Interactions.uml#_EcFdwS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGkC9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGkS9uEeOq3KT-lRHlww" name="vSource">
+        <modelElement href="Interactions.uml#_EcGE0C9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGki9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGky9uEeOq3KT-lRHlww" name="lTarget">
+        <modelElement href="Interactions.uml#_EcGE0S9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGlC9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGlS9uEeOq3KT-lRHlww" name="vTarget">
+        <modelElement href="Interactions.uml#_EcGE0i9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGli9uEeOq3KT-lRHlww" name="Point">
+          <modelElement href="Interactions.uml#_EaaCwC9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGly9uEeOq3KT-lRHlww" name="reducedMass">
+        <modelElement href="Interactions.uml#_EcGE0y9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGmC9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGmS9uEeOq3KT-lRHlww" name="distance">
+        <modelElement href="Interactions.uml#_EcGE1C9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGmi9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H9GGmy9uEeOq3KT-lRHlww" name="deltaR">
+        <modelElement href="Interactions.uml#_EcGE1S9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H9GGnC9uEeOq3KT-lRHlww" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H8_YsC9uEeOq3KT-lRHlww" comments="_H8-KkC9uEeOq3KT-lRHlww" targetConnectionVisual="_H8-KkS9uEeOq3KT-lRHlww" name="NormalElasticStrategy" generalizations="_H89jgC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EV8ZgC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_H8_YsS9uEeOq3KT-lRHlww" position="1011.0,538.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_H8_Ysi9uEeOq3KT-lRHlww" label="+"/>
+    <operations xmi:id="_H8_Ysy9uEeOq3KT-lRHlww" name="interact">
+      <modelElement href="Interactions.uml#_EajzwS9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H8_YtC9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_Eaka0i9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H8_YtS9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_Eaka0y9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H8_Yti9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H8_Yty9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_Eajzwi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8_YuC9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8_YuS9uEeOq3KT-lRHlww" name="target">
+        <modelElement href="Interactions.uml#_Eaka0C9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8_Yui9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8_Yuy9uEeOq3KT-lRHlww" name="disp">
+        <modelElement href="Interactions.uml#_Eaka0S9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8_YvC9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_H8aw8C9uEeOq3KT-lRHlww" comments="_H8YUsC9uEeOq3KT-lRHlww" targetConnectionVisual="_H8YUsS9uEeOq3KT-lRHlww" name="IInteractStrategy" associationsIn="_H8XtoC9uEeOq3KT-lRHlww _H8aJ4C9uEeOq3KT-lRHlww _H8d0QC9uEeOq3KT-lRHlww _H8ebUC9uEeOq3KT-lRHlww" associationsOut="_H8XtoC9uEeOq3KT-lRHlww" subclassedBy="_H8ebUS9uEeOq3KT-lRHlww _H89jgC9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EV1r0C9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_H8aw8S9uEeOq3KT-lRHlww" position="546.0,473.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_H8aw8i9uEeOq3KT-lRHlww" label="+"/>
+    <attributes xmi:id="_H8aw8y9uEeOq3KT-lRHlww" defaultValue="new IInteractStrategy() {&#xA;&#xA;&#x9;&#x9;@Override&#xA;&#x9;&#x9;/**&#xA;&#x9;&#x9; * No-op behavior&#xA;&#x9;&#x9; * @param context Ignored&#xA;&#x9;&#x9; * @param target Ignored&#xA;&#x9;&#x9; * @param disp Ignored&#xA;&#x9;&#x9; */&#xA;&#x9;&#x9;public void interact(Ball context, Ball target, Dispatcher disp) {&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;}" name="NULL_STRATEGY" staticAttribute="true">
+      <modelElement href="Interactions.uml#_EV2S4C9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H8aw9C9uEeOq3KT-lRHlww" label="+"/>
+      <cardinality xmi:id="_H8aw9S9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+      <type xmi:id="_H8aw9i9uEeOq3KT-lRHlww" name="IInteractStrategy">
+        <modelElement href="Interactions.uml#_EV1r0C9uEeOq3KT-lRHlww"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_H8aw9y9uEeOq3KT-lRHlww" name="interact">
+      <modelElement href="Interactions.uml#_EahXgi9uEeOq3KT-lRHlww"/>
+      <visibility xmi:id="_H8aw-C9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H8aw-S9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_EahXgy9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8aw-i9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8aw-y9uEeOq3KT-lRHlww" name="target">
+        <modelElement href="Interactions.uml#_EahXhC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8aw_C9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8aw_S9uEeOq3KT-lRHlww" name="disp">
+        <modelElement href="Interactions.uml#_EahXhS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8aw_i9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_H8j64C9uEeOq3KT-lRHlww" comments="_H8fCYC9uEeOq3KT-lRHlww" targetConnectionVisual="_H8fCYS9uEeOq3KT-lRHlww" name="MultiInteractStrategy" associationsOut="_H8d0QC9uEeOq3KT-lRHlww _H8ebUC9uEeOq3KT-lRHlww" generalizations="_H8ebUS9uEeOq3KT-lRHlww">
+    <modelElement href="Interactions.uml#_EV4IEC9uEeOq3KT-lRHlww"/>
+    <visualProperties xmi:id="_H8j64S9uEeOq3KT-lRHlww" position="422.0,621.0" size="377.0,67.0"/>
+    <visibility xmi:id="_H8j64i9uEeOq3KT-lRHlww" label="+"/>
+    <attributes xmi:id="_H8j64y9uEeOq3KT-lRHlww" name="_s1">
+      <modelElement href="Interactions.uml#_EcyBUC9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H8j65C9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EcyBUS9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H8iFsy9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EcyBUS9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H8kh8C9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H8kh8S9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+      <type xmi:id="_H8kh8i9uEeOq3KT-lRHlww" name="IInteractStrategy">
+        <modelElement href="Interactions.uml#_EV1r0C9uEeOq3KT-lRHlww"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_H8kh8y9uEeOq3KT-lRHlww" name="_s2">
+      <modelElement href="Interactions.uml#_EcyBUi9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H8kh9C9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EcyoYC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H8jT0y9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EcyoYC9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H8kh9S9uEeOq3KT-lRHlww" label="-"/>
+      <cardinality xmi:id="_H8kh9i9uEeOq3KT-lRHlww" label="1" max="1" min="1"/>
+      <type xmi:id="_H8kh9y9uEeOq3KT-lRHlww" name="IInteractStrategy">
+        <modelElement href="Interactions.uml#_EV1r0C9uEeOq3KT-lRHlww"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_H8kh-C9uEeOq3KT-lRHlww" name="MultiInteractStrategy">
+      <modelElement href="Interactions.uml#_Eah-kS9uEeOq3KT-lRHlww"/>
+      <keywords xmi:id="_H8kh-S9uEeOq3KT-lRHlww" keyword="create"/>
+      <visibility xmi:id="_H8kh-i9uEeOq3KT-lRHlww" label="+"/>
+      <outParameters xmi:id="_H8kh-y9uEeOq3KT-lRHlww">
+        <modelElement href="Interactions.uml#_EailpC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8kh_C9uEeOq3KT-lRHlww" name="MultiInteractStrategy">
+          <modelElement href="Interactions.uml#_EV4IEC9uEeOq3KT-lRHlww"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_H8kh_S9uEeOq3KT-lRHlww" name="s1">
+        <modelElement href="Interactions.uml#_EailoC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8kh_i9uEeOq3KT-lRHlww" name="IInteractStrategy">
+          <modelElement href="Interactions.uml#_EV1r0C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8kh_y9uEeOq3KT-lRHlww" name="s2">
+        <modelElement href="Interactions.uml#_EailoS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8kiAC9uEeOq3KT-lRHlww" name="IInteractStrategy">
+          <modelElement href="Interactions.uml#_EV1r0C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_H8kiAS9uEeOq3KT-lRHlww" name="interact">
+      <modelElement href="Interactions.uml#_EailpS9uEeOq3KT-lRHlww"/>
+      <stereotypes xmi:id="_H8kiAi9uEeOq3KT-lRHlww" name="LegacyStyledElement">
+        <modelElement href="Interactions.uml#_EajMsi9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <stereotypes xmi:id="_H8kiAy9uEeOq3KT-lRHlww" name="Annotations">
+        <modelElement href="Interactions.uml#_EajMsy9uEeOq3KT-lRHlww"/>
+      </stereotypes>
+      <visibility xmi:id="_H8kiBC9uEeOq3KT-lRHlww" label="+"/>
+      <parameters xmi:id="_H8kiBS9uEeOq3KT-lRHlww" name="context">
+        <modelElement href="Interactions.uml#_Eailpi9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8kiBi9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8kiBy9uEeOq3KT-lRHlww" name="target">
+        <modelElement href="Interactions.uml#_EajMsC9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8kiCC9uEeOq3KT-lRHlww" name="Ball">
+          <modelElement href="Interactions.uml#_EWUM8C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_H8kiCS9uEeOq3KT-lRHlww" name="disp">
+        <modelElement href="Interactions.uml#_EajMsS9uEeOq3KT-lRHlww"/>
+        <type xmi:id="_H8kiCi9uEeOq3KT-lRHlww" name="Dispatcher">
+          <modelElement href="Interactions.uml#_EWdW4C9uEeOq3KT-lRHlww"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
